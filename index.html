@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Favicon Meta Tags-->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Site Title-->
     <title>Jake Wood | Junior Web Developer</title>
     <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" href="main.css">
     <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!--AOS CDN Source-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Google Web Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package/safari-pinned-tab.svg" color="#5bbad5">
     
 </head>
 <body>
     <header class="site-header">
         <!--Start of Navbar Section-->
         <nav class="navbar">
-            <!-- <div class="my-logo">
-                <p class="logo">Jake Wood</p>
-            </div> -->
             <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#hero">Home</a>
+                </li>
                 <li class="nav-item">
                     <a href="#portfolio">Portfolio</a>
                 </li>
@@ -28,10 +40,10 @@
                     <a href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger toggle">
                 <div class="line line-1"></div>
                 <div class="line line-2"></div>
                 <div class="line line-3"></div>
@@ -41,20 +53,20 @@
     </header>
     <main>
         <!--Start of Hero Section-->
-        <section class="hero">
-            <div class="detail"></div>
-            <div class="hero-content">
-                <h1 class="main-header">I'm Jake. A Bristol-based <span>Junior Web Developer.</span></h1>
-                <p class="main-subheader">Take a look at some of my work <span>below:</span></p>
+        <section class="hero" id="hero">
+            <div class="detail" data-aos="fade-right" data-aos-duration="1000"></div>
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="main-header">I'm Jake. A Bristol-based<br> <span>Junior Web Developer.</span></h1>
+                <p class="main-subheader">Take a look at some of my work <a href="#portfolio" class="view-work" >below:</a</p>
             </div>
-            <aside class="social-icons-sidebar">
-                <a href="https://github.com/jakealistairwood">
+            <aside class="social-icons-sidebar" data-aos="fade-up" data-aos-duration="1000">
+                <a href="https://github.com/jakealistairwood" target="_blank">
                     <i class="fab fa-github social-icons"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jake-wood-726141114/">
+                <a href="https://www.linkedin.com/in/jake-wood-726141114/" target="_blank">
                     <i class="fab fa-linkedin social-icons"></i>
                 </a>
-                <a href="./img/resume copy.pdf">
+                <a href="./img/resume copy.pdf" target="_blank">
                     <i class="fas fa-file-pdf social-icons"></i>
                 </a>
                 <div class="social-icons-detail"></div>
@@ -64,7 +76,7 @@
 
         <!--Start of Portfolio Section-->
         <section class="portfolio" id="portfolio">
-            <header class="portfolio-header">
+            <header class="portfolio-header" data-aos="fade-down" data-aos-duration="1000">
                 <h2 class="header-1 header-title">Portfolio</h2>
                 <h2 class="header-2 header-title">Portfolio</h2>
                 <h2 class="header-3 header-title">Portfolio</h2>
@@ -76,7 +88,7 @@
                 <div class="grid-container">
 
                     <!--PROJECT CARD-->
-                    <div class="grid-item">
+                    <div class="grid-item" data-aos="fade-up" data-aos-duration="2000">
                         <div class="project-img">
                             <img src="./img/portfolio_mockup.jpg" alt="laptop showing my portfolio site">
                         </div>
@@ -107,11 +119,11 @@
                         </div>
                         <div class="project-btns">
                             <button class="code-btn btn">Code</button>
-                            <button class="demo-btn btn">Visit Site</button>
+                            <!-- <button class="demo-btn btn">Visit Site</button> -->
                         </div>
                     </div>
                     <!--END OF PROJECT CARD-->
-                    <div class="grid-item">
+                    <div class="grid-item" data-aos="fade-up" data-aos-duration="2000">
                         <div class="project-img">
                             <img src="./img/sm-dashboard_mockup.jpg" alt="image showing the dashboard in mobile view.">
                         </div>
@@ -141,14 +153,14 @@
                         </div>
                         <div class="project-btns">
                             <button class="code-btn btn">
-                                <a href="https://github.com/jakealistairwood/frontendmentor-sm-dashboard">Code</a>
+                                <a href="https://github.com/jakealistairwood/frontendmentor-sm-dashboard" target="_blank">Code</a>
                             </button>
                             <button class="demo-btn btn">
-                                <a href="https://jakealistairwood.github.io/frontendmentor-sm-dashboard/">Visit Site</a>
+                                <a href="https://jakealistairwood.github.io/frontendmentor-sm-dashboard/" target="_blank">Visit Site</a>
                             </button>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" data-aos="fade-up" data-aos-duration="2000">
                         <div class="project-img">
                             <img src="./img/easybank_mockup.jpg" alt="laptop showing the easybank site">
                         </div>
@@ -178,10 +190,10 @@
                         </div>
                         <div class="project-btns">
                             <button class="code-btn btn">
-                                <a href="https://github.com/jakealistairwood/easybank_frontendmentor">Code</a>
+                                <a href="https://github.com/jakealistairwood/easybank_frontendmentor" target="_blank">Code</a>
                             </button>
                             <button class="demo-btn btn">
-                                <a href="https://easybank-frontendmentor-five.vercel.app">Visit Site</a>
+                                <a href="https://easybank-frontendmentor-five.vercel.app" target="_blank">Visit Site</a>
                             </button>
                         </div>
                     </div>
@@ -192,17 +204,21 @@
 
         <!--About Me Section-->
         <section class="about" id="about">
-            <header class="about-header">
+            <header class="about-header" data-aos="fade-down" data-aos-duration="1000">
                 <h2 class="header-1 header-title">About</h2>
                 <h2 class="header-2 header-title">About</h2>
                 <h2 class="header-3 header-title">About</h2>
                 <h2 class="header-4 header-title">About</h2>
                 <div class="about-detail"></div>
+                <p class="sub-info" data-aos="fade-in" data-aos-duration="1000">
+                    Hi! I’m Jake Wood, born and raised by the beaches in North Devon. Avid runner, terrible surfer but growing developer.
+                     Currently making the transition from Healthcare to Tech<span>_nology.</span>
+                </p>
             </header>
             <section class="about-content">
-                <h3 class="content-header">From Healthcare to Tech<span>_nology</span></h3>
-                <div class="content-info">
-                    <p class="content-info-text">
+                <h3 class="content-header" data-aos="fade-in" data-aos-duration="1000">Why the change?</h3>
+                <div class="content-info" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="content-info-text" >
                         Helping others has always been one of my main motivators and while I enjoyed this part of my current role
                          as a Healthcare Assistant these past two years, I ultimately felt unfulfilled and restless. The role didn’t
                          stimulate my mind and restricted any kind of creativity. 
@@ -211,22 +227,22 @@
                         Naturally being tech-savvy, I began coding in my spare time; not only to learn a new skill but also to provide
                         an outlet for the stress acquired on the job. I quickly learnt that programming appealed to me immensely. From
                         the problem-solving nature to the almost limitless possibilities it provides as a career; the option to work in
-                        almost any environment in any field of work I find interesting, thereby I can produce something I find meaningful
-                        and helps make someone’s life easier.
+                        any field of work I find interesting where I can thereby produce something meaningful
+                        and help make someone’s life easier.
                     </p>
                     <p class="content-info-text">
                         Another aspect I find hugely appealing is that it allows you to be both logical and creative. I have always had an
                         appreciation for great design and architecture, something which I think translates brilliantly to code. An application
                         needs to be coded (structured) efficiently; able to achieve its intended purpose with as little code (resources) as
-                        possible. It also needs to look the part, designed with its environment in mind; intuitive and effortless to use. 
+                        possible. It also needs to look the part and designed with its environment in mind; intuitive and effortless to use. 
                     </p>
                     <p class="content-info-text">
                         The continual learning, blend of logic and creativity and the almost limitless possibilities a career in development brings
                         are why I have decided to join the course at _nology. 
                     </p>
                     <p class="content-info-text">
-                        I believe it will provide an excellent foundation on which to build my skills as well provide a collaborative learning environment
-                        in which we are all working towards achieving a common goal. Upon completion, I hope to go down the path of front-end development
+                        I believe it will provide an excellent foundation on which to build my skills as well as provide a collaborative learning environment
+                        in which we will all be working towards achieving a common goal. Upon completion, I hope to go down the path of front-end development
                         and possibly UX design in the future. 
                     </p>
                 </div>
@@ -234,16 +250,32 @@
         </section>
         <!--End of About Section-->
 
+        <!-- Contact Section-->
+        <section class="contact" id="contact">
+            <div class="contact-container" data-aos="fade-right" data-aos-duration="1000">
+                <p class="cta">Want to get in touch?</p>
+                <button class="cta-btn">
+                    <a href="mailto:jakealistairwood@gmail.com">Message me</a>
+                </button>
+            </div>
+        </section>
+        <!--End of Contact Section-->
+
         <!--Footer Section-->
         <footer class="site-footer">
-            <a href="https://github.com/jakealistairwood" class="footer-links">Github</a>
-            <a href="https://www.linkedin.com/in/jake-wood-726141114/" class="footer-links">LinkedIn</a>
+            <a href="https://github.com/jakealistairwood" target="_blank" class="footer-links">Github</a>
+            <a href="https://www.linkedin.com/in/jake-wood-726141114/" target="_blank" class="footer-links">LinkedIn</a>
         </footer>
-        <!--Enf of Footer Section-->
+        <!--End of Footer Section-->
     </main>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 
 <!-- <i class="fas fa-external-link-alt"></i> -->
 <!-- <i class="fas fa-code"></i> -->
+
