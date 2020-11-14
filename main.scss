@@ -254,8 +254,11 @@ a {
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 
                 .project-img {
+                    height: 250px;
+
                     img {
                         width: 100%;
+                        height: 250px;
                         border-radius: 5px;
                         object-fit: cover;
                         opacity: 0.15;
@@ -270,6 +273,7 @@ a {
                 }
 
                 header {
+
                     .project-header {
                         letter-spacing: 0.3em;
                         font-size: 1.5rem;
@@ -356,6 +360,12 @@ a {
                         .js-icon {
                             &:hover {
                                 color: $js-icon;
+                            }
+                        }
+
+                        .react-icon {
+                            &:hover {
+                                color: $react-icon;
                             }
                         }
                     }
@@ -714,12 +724,12 @@ a {
             padding-left: 10px;
 
             .main-header {
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 width: 100%;
             }
 
             .main-subheader {
-                font-size: 0.6rem;
+                font-size: 0.7rem;
             }
         }
         .social-icons-sidebar {
@@ -727,12 +737,23 @@ a {
                 font-size: 2rem;
             }
             .social-icons-detail {
-                height: 150px;
+                height: 20px;
             }
         }
     }
 
     /* Portfolio Section */
+    .portfolio {
+        .portfolio-header {
+            .sub-info {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
     /* About Section */
     .about {
         .about-header {
