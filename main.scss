@@ -15,6 +15,7 @@ body {
     background-color: $primary-bg;
     color: $font-color;
     font-family: $primary-font;
+    width: 100%;
 }
 
 span {
@@ -31,18 +32,19 @@ a {
                     NAVBAR SECTION
 ================================================= */
 .site-header {
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $primary-bg;
+    z-index: 1500;
 
     .navbar {
         display: flex;
-        position: fixed;
         justify-content: flex-end;
         align-items: center;
         height: 8vh;
         width: 90%;
-        background-color: $primary-bg;
-        z-index: 1000;
+        margin: 0 auto;
 
         .nav-links {
             display: flex;
@@ -572,17 +574,28 @@ a {
     }
 }
 
-
 /* Tablet View and below */
 @media screen and (max-width: 768px) {
 
     /* Navbar Section */
     .site-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1500;
+
         .navbar {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+
+            .nav-links.active {
+                transform: translateX(0%);
+            }
             .nav-links {
                 position: absolute;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 align-items: center;
                 right: 0;
                 top: 8vh;
@@ -595,7 +608,7 @@ a {
                 z-index: 1000;
 
                 .nav-item {
-                    font-size: 3rem;
+                    font-size: 2rem;
 
                     a {
                         color: $red;
@@ -608,29 +621,35 @@ a {
             .hamburger {
                 display: block;
             }
-
-            .active {
-                transform: translateX(0%);
-            }
         }
     }
 
     /* Hero Section */
     .hero {
+        position: relative;
+
         .detail {
             display: none;
         }
 
         .hero-content {
+            position: absolute;
+            height: 70%;
             padding-left: 0;
 
             .main-header {
-                font-size: 2.4rem;
-                width: 90%;
+                // font-size: 2.3rem;
+                width: 95%;
+                font-size: 2.3rem;
+
+                h1 {
+                    font-size: 1.2rem;
+                }
             }
 
             .main-subheader {
-                font-size: .8rem;
+                font-size: .7rem;
+                margin-top: 20px;
             }
         }
 
@@ -658,13 +677,16 @@ a {
                 font-size: 0.9rem;
             }
         }
-    }
+    }    
 
     /* About Section */
     .about {
         .about-header {
             h2 {
                 font-size: 3rem;
+            }
+            .sub-info {
+                font-size: .8rem;
             }
         }
         .about-content {
@@ -750,6 +772,7 @@ a {
                 margin: 0 auto;
                 text-align: center;
                 font-size: 0.9rem;
+                margin-bottom: 100px;
             }
         }
     }
@@ -758,9 +781,10 @@ a {
     .about {
         .about-header {
             .sub-info {
-                font-size: 0.8rem;
+                font-size: 0.5rem;
                 line-height: 30px;
-                width: 70%;
+                width: 90%;
+                margin: 0 auto;
             }
         }
         .about-content {
@@ -770,8 +794,12 @@ a {
                 font-size: 1.4rem!important;
 
                 .content-info {
+                    width: 80%;
+                    margin: 0 auto;
+                    background-color: lemonchiffon;
                     .content-info-text {
-                        line-height: 5px;
+                        line-height: 50px;
+                        width: 80%;
                     }
                 }
             }
@@ -796,8 +824,6 @@ a {
     }
 
 }
-
-
 
 /* Small Desktop / Laptop and below */
 @media screen and (max-width: 1440px) {
