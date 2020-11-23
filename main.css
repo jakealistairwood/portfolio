@@ -592,12 +592,15 @@ a {
   }
 
   /* Hero Section */
+  .hero {
+    width: 100%;
+  }
   .hero .detail {
     display: none;
   }
   .hero .hero-content {
     width: 100%;
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .hero .hero-content .main-header {
     font-size: 1.6rem;

@@ -743,12 +743,13 @@ a {
     }
     /* Hero Section */
     .hero {
+        width: 100%;
         .detail {
             display: none;
         }
         .hero-content {
             width: 100%;
-            padding-left: 10px;
+            padding-left: 20px;
 
             .main-header {
                 font-size: 1.6rem;
