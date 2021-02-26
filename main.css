@@ -313,6 +313,9 @@ a {
 .portfolio .portfolio-gallery .grid-container .grid-item .project-skills .skills-icons-container .react-icon:hover {
   color: #59d7f6;
 }
+.portfolio .portfolio-gallery .grid-container .grid-item .project-skills .skills-icons-container .node-icon:hover {
+  color: #75c53b;
+}
 .portfolio .portfolio-gallery .grid-container .grid-item .project-btns {
   display: flex;
   justify-content: center;

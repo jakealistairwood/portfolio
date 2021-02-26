@@ -378,6 +378,12 @@ a {
                                 color: $react-icon;
                             }
                         }
+
+                        .node-icon {
+                            &:hover {
+                                color: $node-icon;
+                            }
+                        }
                     }
                 }
 
